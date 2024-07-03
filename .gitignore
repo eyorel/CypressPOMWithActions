@@ -1,0 +1,6 @@
+# Cypress test screenshots and videos
+cypress/screenshots/
+cypress/videos/
+
+# Dependency directories
+node_modules/
