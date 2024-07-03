@@ -18,4 +18,4 @@ clickOnPlaceOrder(userData){
     this.checkoutPage.clickPlaceOrder()
 }
 
-}
+}/*  */

@@ -16,7 +16,7 @@ Ensure you have the following installed on your machine:
 
 ## Running Tests
 
-Setting up variables before running Cypress on your command:
+3. **Setting up variables before running Cypress on your command:**
 $env:CYPRESS_ENV="QA";  # Set the environment
 $env:CYPRESS_BASE_URL="https://automationexercise.com/"; # Set the base URL
 $env:CYPRESS_ADMIN_EMAIL="erick@gmail.com"; # Admin email
@@ -29,8 +29,7 @@ export CYPRESS_ADMIN_EMAIL="erick@gmail.com"; # Admin email
 export CYPRESS_ADMIN_PASSWORD="testing123";  # Admin password
 export CYPRESS_TAGS="smoke,sanity"  # Only run tests tagged as smoke or sanity
 
-
-Running Cypress Tests Visually
+## Running Cypress Tests Visually
 To open the Cypress Test Runner and run tests interactively:
 - npm run cypress:open
 
