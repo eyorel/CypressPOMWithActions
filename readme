@@ -1,0 +1,65 @@
+# Cypress Test Automation Framework
+
+This project is a Cypress test automation framework using the Page Object Model (POM) and Keyword Driven Actions. It includes a setup for generating test reports using `mochawesome`.
+
+## Prerequisites
+
+Ensure you have the following installed on your machine:
+- [Node.js](https://nodejs.org/)
+- npm (comes with Node.js)
+
+## Installation
+
+1. **Clone the repository or extract the provided zip file**
+2. **Install the dependencies**:
+- npm install
+
+## Running Tests
+
+Setting up variables before running Cypress on your command:
+$env:CYPRESS_ENV="QA";  # Set the environment
+$env:CYPRESS_BASE_URL="https://automationexercise.com/"; # Set the base URL
+$env:CYPRESS_ADMIN_EMAIL="erick@gmail.com"; # Admin email
+$env:CYPRESS_ADMIN_PASSWORD="testing123";  # Admin password
+$env:CYPRESS_TAGS="smoke,sanity"  # Only run tests tagged as smoke or sanity
+
+export CYPRESS_ENV="QA";  # Set the environment
+export CYPRESS_BASE_URL="https://automationexercise.com/"; # Set the base URL
+export CYPRESS_ADMIN_EMAIL="erick@gmail.com"; # Admin email
+export CYPRESS_ADMIN_PASSWORD="testing123";  # Admin password
+export CYPRESS_TAGS="smoke,sanity"  # Only run tests tagged as smoke or sanity
+
+
+Running Cypress Tests Visually
+To open the Cypress Test Runner and run tests interactively:
+- npm run cypress:open
+
+Running Cypress Tests Headlessly
+To run the tests headlessly and generate reports:
+- npm run cypress:run
+
+Generating the Report
+After running the tests headlessly, generate the HTML report:
+- npm run cypress:report
+
+## Project Structure
+cypress/: Contains all Cypress test files, page objects, actions, and support files.
+fixtures/: Test data files.
+integration/: Test specification files.
+pageObjects/: Page Object Model files.
+plugins/: Cypress plugin files.
+reports/: Directory where test reports will be generated.
+screenshots/: Directory where screenshots will be saved.
+support/: Custom commands and actions.
+actions/: Keyword driven action files.
+commands.js: Custom Cypress commands.
+index.js: Support file for loading commands and configurations.
+videos/: Directory where test videos will be saved.
+node_modules/: Directory containing all npm packages.
+package.json: npm configuration file with dependencies and scripts.
+cypress.json: Cypress configuration file.
+
+## Notes
+- Ensure you have the correct permissions to install and run Node.js applications.
+- The cypress:report script will run the tests headlessly and generate a merged HTML report using mochawesome.
+- If you have any questions or issues, please contact erick at erick.leiva.cas@gmail.com

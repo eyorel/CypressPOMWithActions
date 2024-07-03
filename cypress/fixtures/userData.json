@@ -1,0 +1,23 @@
+{
+    "newUser": {
+        "firstname": "John",
+        "lastname" : "Doe",
+        "email": "john.doe@example.com",
+        "dayofbirth": "1",
+        "monthofbirth" : "January",
+        "yearofbirth" : "1990",
+        "streetAddress" : "One Random Address",
+        "country" : "United States",
+        "state" : "California",
+        "city" : "Vallejo",
+        "zipcode": "98598",
+        "mobile" : "3517849845",
+        "comment":"Please handle my product with care",
+        "cardNumber":"1231654987987654",
+        "cvc":"234",
+        "expirationMonth":"06",
+        "expirationYear":"2028",
+        "subject" : "Hire me as QA",
+        "message" : "Best QA ever"
+    }
+}
