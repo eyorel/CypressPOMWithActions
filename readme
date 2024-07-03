@@ -1,6 +1,6 @@
 # Cypress Test Automation Framework
 
-This project is a Cypress test automation framework using the Page Object Model (POM) and Keyword Driven Actions. It includes a setup for generating test reports using `mochawesome`.
+This project is a Cypress test automation framework using the Page Object Model (POM) and Keyword Driven Actions. It includes a setup for generating test reports using `cypress-mochawesome-reporter`.
 
 ## Prerequisites
 
@@ -29,17 +29,13 @@ export CYPRESS_ADMIN_EMAIL="erick@gmail.com"; # Admin email
 export CYPRESS_ADMIN_PASSWORD="testing123";  # Admin password
 export CYPRESS_TAGS="smoke,sanity"  # Only run tests tagged as smoke or sanity
 
-## Running Cypress Tests Visually
+Running Cypress Tests Visually
 To open the Cypress Test Runner and run tests interactively:
-- npm run cypress:open
+- npx cypress open
 
 Running Cypress Tests Headlessly
-To run the tests headlessly and generate reports:
-- npm run cypress:run
-
-Generating the Report
-After running the tests headlessly, generate the HTML report:
-- npm run cypress:report
+To run the tests headlessly and generate reports (this will generate the reports)
+- npx cypress run 
 
 ## Project Structure
 cypress/: Contains all Cypress test files, page objects, actions, and support files.
@@ -60,5 +56,4 @@ cypress.json: Cypress configuration file.
 
 ## Notes
 - Ensure you have the correct permissions to install and run Node.js applications.
-- The cypress:report script will run the tests headlessly and generate a merged HTML report using mochawesome.
 - If you have any questions or issues, please contact erick at erick.leiva.cas@gmail.com
