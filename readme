@@ -38,21 +38,21 @@ To run the tests headlessly and generate reports (this will generate the reports
 - npx cypress run 
 
 ## Project Structure
-cypress/: Contains all Cypress test files, page objects, actions, and support files.
-fixtures/: Test data files.
-integration/: Test specification files.
-pageObjects/: Page Object Model files.
-plugins/: Cypress plugin files.
-reports/: Directory where test reports will be generated.
-screenshots/: Directory where screenshots will be saved.
-support/: Custom commands and actions.
-actions/: Keyword driven action files.
-commands.js: Custom Cypress commands.
-index.js: Support file for loading commands and configurations.
-videos/: Directory where test videos will be saved.
-node_modules/: Directory containing all npm packages.
-package.json: npm configuration file with dependencies and scripts.
-cypress.json: Cypress configuration file.
+- cypress/: Contains all Cypress test files, page objects, actions, and support files.
+  -- e2e/: Root folder for test cypress files
+    -- ChuckNorris/: Simple API test simulation
+    -- homepage/: Automated test files for ecommerce site
+  -- fixtures/: Test data files.
+  -- plugins/: Test enhancement files (mochawesome-report-generator)
+  -- reports/: Report files generated from mochawesome-report-generator plugin
+  -- support/: Root folder for Page Object Model + Actions files
+    --- pageObjects/: Page Object Model files.
+    --- actions/: Keyword driven action files.
+    --- commands.js: Custom Cypress commands.
+    --- utils.js: Support file for loading reusable utilities.
+    --- videos/: Directory where test videos will be saved.
+  -- package.json: npm configuration file with dependencies and scripts.
+  -- cypress.json: Cypress configuration file.
 
 ## Notes
 - Ensure you have the correct permissions to install and run Node.js applications.
